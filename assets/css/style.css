@@ -1,0 +1,214 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 110px !important;
+    padding-right: 110px !important;
+}
+
+
+
+/* Repeated elements */
+.btn {
+    padding: 17px 60px;
+    font-size: 0.8em;
+    color: #ffffff;
+    background: #D76E45;
+    background: linear-gradient(0deg, #D90404 0%, #D69960 100%);
+    border-radius: 100px;
+    box-shadow: 0 4px 25px 0 #F02A2A;
+    display: block;
+}
+/* ./Repeated elements */
+
+
+
+/* Nav */
+.nav > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+
+
+
+/* Nav logo */
+.nav__logo {
+    display: block;
+    width: 140px;
+}
+
+.nav__logo-img {
+    width: 100%;
+}
+/* ./Nav logo */
+
+
+
+/* Nav contacts */
+.nav__contacts {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.nav__contacts-line {
+    display: block;
+    height: 1px;
+    width: 70px;
+    background-color: #000000;
+    margin-left: 0.7em;
+    margin-right: 1em;
+}
+/* ./Nav contacts */
+
+
+
+/* Nav settings */
+.nav__settings {
+    display: flex;
+    align-items: center;
+}
+
+.nav__settings-btn {
+    width: 100%;
+    text-align: right;
+}
+
+.nav__settings-btn {
+    font-weight: 400;
+    position: relative;
+    outline: none;
+}
+
+.nav__settings-list {
+    left: 0;
+    right: 40px;
+}
+/* ./Nav settings */
+
+
+
+/* Nav settings font */
+.nav__settings-list_font {
+    text-align: right;
+}
+
+.nav__settings-item_font {
+    border-top: 1px solid #000;
+    padding: 0.1em 0;
+}
+
+.nav__settings-item_font:last-child {
+    border-bottom: 1px solid #000;
+}
+/* ./Nav settings font */
+
+
+
+/* Nav settings language */
+.nav__settings-btn_lang {
+    display: flex;
+    align-items: center;
+}
+
+.nav__settings-btn-img_lang {
+    padding-right: 6px;
+}
+
+.nav__settings-item_lang {
+    margin-top: 8px;
+}
+/* ./Nav settings language */
+
+
+
+/* Nav dropdown */
+.nav__dropdown {
+    position: relative;
+}
+
+.nav__dropdown:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav__dropdown-menu {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.nav__dropdown-menu_active {
+    max-height: 150px;
+}
+
+.nav__dropdown-btn::after {
+    content: url('../img/arrow-down.svg');
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav__dropdown-title-btn_active::after {
+    transform: rotateZ(180deg);
+}
+/* ./Nav dropdown */
+
+
+
+/* Hero section */
+.hero > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: -278.5px;
+    top: 230px;
+    border-radius: 50%;
+
+    background: rgba(164, 174, 29, 0.1);
+}
+
+.hero__text-box {
+    width: 50%;
+    padding-top: 80px;
+}
+
+.hero__title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero__description {
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+/* ./Hero section */
